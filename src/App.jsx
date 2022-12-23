@@ -114,6 +114,7 @@ function App(){
       {capture && < Webcam ref={webref}/>}
       <div className="card">
         <button onClick={begin}>{capture ? `Stop`: `Start`}</button>
+        <br/><br/>
         {capture && <button onClick={handleClick}>   Click Photo  </button>}
         </div>
       {preview && <Avatar width={200}
@@ -121,7 +122,9 @@ function App(){
       src={imgg} 
       onCrop={onCrop}
       onClose={onClose}  />}   
-      {preview && <img src={preview} alt=""/>}
+      <br/><br/>
+      {preview && <img  className='preview' src={preview} alt=""/>}
+      <br/><br/>
       {preview && <button className='upload' onClick={upload}>Upload </button>}
       <ToastContainer
 position="top-left"

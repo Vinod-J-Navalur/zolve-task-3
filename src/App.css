@@ -32,4 +32,9 @@
 
 .upload{
   margin-top: 20px;
+  margin-left: 0px;
+}
+
+.preview{
+  margin: 0px;
 }
